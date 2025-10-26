@@ -1,0 +1,16 @@
+// en fait sur le front je dois faire deux formulaires 
+// qui se croisent, c'est a dire 
+
+// la recette :
+
+// titre:(relie recettepost)
+// ingredients:(relie ingredientpost avec la qty)
+// instructions: (relie recettepost)
+// ect
+
+// et en fait on va recup les id des ingredients et les mettre
+// dans le tableau ingredients de la recette
+
+
+
+Faire les securités a l'ajout des input pour le front, ne pas oublier d'accepter meme sans majuscules, masi de la remmettre a l'affichage notammment pour la difficulty

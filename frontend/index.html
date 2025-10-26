@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="id_accueil">MARMITA</h1>
+        <nav>
+            <ul>
+                <li><a href="#id_accueil">Accueil</a></li>
+                
+                <li><a href="#id_recettes">Toutes les recettes</a></li>
+
+                <li><a href="#id_contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="addForm">
+            <h2>Créer une recette</h2>
+            <form>
+                <div>
+                  <input type="text" id="title" name="title" required placeholder="Nom de la recette">
+                </div>
+            
+                <div id="ingredients-container">
+                  <!-- Groupe ingrédient initial -->
+                  <div class="ingredient-group">
+                    <input type="text" name="nameIngredient" placeholder="Ingrédient" required>
+                    <input type="number" name="qtyIngredient" placeholder="Quantité" required>
+                  </div>
+                </div>
+            
+                <button type="button" id="addIngredient">+ Ajouter un ingrédient</button>
+            
+                <div>
+                    <textarea name="instructions" id="instructions" required>Instructions</textarea>
+                </div>
+                <div>
+                    <select name="difficulty" id="difficulty">
+                        <option value="facile">Facile</option>
+                        <option value="moyen">Moyen</option>
+                        <option value="difficile">Difficile</option>
+                    </select>
+                </div>
+            
+                <button type="submit">Ajouter la recette</button>
+              </form>
+
+                <div>
+                    <img src="./assets/images/accueil.jpg" alt="image plat">
+                </div>
+        </section>
+
+
+
+        <section id="id_recettes">
+            <h2>Toutes les recettes</h2>
+            <div id="recettes-container">
+                <!-- Les recettes seront affichées ici -->
+
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./assets/javascript/script.js"></script>
+</body>
+</html>
